@@ -1,0 +1,106 @@
+<div class = "edit-profile-form-container">
+    <h2>Edit Profile</h2>
+    <form [formGroup]="editUserProfileForm" (ngSubmit)="onSubmit()">
+        <p>
+        <mat-form-field appearance="fill">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="firstName" value= {{userProfile?.first_name}}>
+        </mat-form-field>
+        </p>
+        <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="lastName" value= {{userProfile?.last_name}}>
+        </mat-form-field>
+        </p>
+        <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Username</mat-label>
+            <input matInput formControlName="username" value= {{userProfile?.username}}>
+        </mat-form-field>
+        </p> 
+        <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Profile Picture</mat-label>
+            <mat-hint>Provide a google drive link</mat-hint>
+            <input matInput formControlName="profilePic" value= {{userProfile?.profilePic}}>
+        </mat-form-field>
+        </p>
+        <p>       
+        <mat-form-field appearance="fill">
+            <mat-label>Department</mat-label>
+            <input matInput formControlName="dept" value= {{userProfile?.dept}}>
+        </mat-form-field>
+       </p> 
+       <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Degree</mat-label>
+            <input matInput formControlName="degree" value= {{userProfile?.degree}}>
+        </mat-form-field>
+       </p> 
+       <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Year</mat-label>
+            <input matInput formControlName="year" value= {{userProfile?.year}}>
+        </mat-form-field>
+       </p> 
+       <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <mat-hint>Enter your official iitb emain address</mat-hint>
+            <input matInput formControlName="email" value= {{userProfile?.email}}>
+        </mat-form-field>
+       </p> 
+       <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Mobile Number</mat-label>
+            <input matInput formControlName="mobileNumber" value= {{userProfile?.mobileNumber}}>
+        </mat-form-field>
+       </p> 
+       <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Alternate Email</mat-label>
+            <input matInput formControlName="alternateEmail" value= {{userProfile?.alternateEmail}}>
+        </mat-form-field>
+       </p> 
+       <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Sub System</mat-label>
+            <input matInput formControlName="subSystem" value= {{userProfile?.subSystem}}>
+        </mat-form-field>
+       </p> 
+       <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Present System</mat-label>
+            <input matInput formControlName="presentSystem" value= {{userProfile?.presentSystem}}>
+        </mat-form-field>
+       </p> 
+       <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Experience</mat-label>
+            <input matInput formControlName="Experience" value= {{userProfile?.Experience}}>
+        </mat-form-field>
+       </p> 
+       <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Topic Working On</mat-label>
+            <input matInput formControlName="topicWorkingOn" value= {{userProfile?.topicWorkingOn}}>
+        </mat-form-field>
+       </p> 
+       <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Hobbies</mat-label>
+            <input matInput formControlName="hobbies" value= {{userProfile?.hobbies}}>
+        </mat-form-field>
+       </p> 
+       <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Softwares Known</mat-label>
+            <input matInput formControlName="softwaresKnown" value= {{userProfile?.softwaresKnown}}>
+        </mat-form-field>
+       </p> 
+       <p>
+        <button mat-flat-button color="primary" type="submit" cdkFocusInitial>UPDATE</button>
+       </p>
+    </form>
+</div>
